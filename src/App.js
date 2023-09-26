@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import { CustomersList } from "./components/customers/CustomersList"
+import { EmployeesList } from "./components/employees/EmployeesList"
+import { TicketList } from "./components/tickets/TicketList"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const App = () => {
+  return <>
+    {/* <TicketList /> */}
+    {/* <CustomersList /> */}
+    <EmployeesList />
+  </>
 }
-
-export default App;
